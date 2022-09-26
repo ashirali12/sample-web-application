@@ -1,9 +1,7 @@
 pipeline{
         agent any  
-        environment{
 	     options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
-        }
 	}
         stages{
 
